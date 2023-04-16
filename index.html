@@ -8,18 +8,30 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<div class="card">
+		<div id="menuSection" class="card">
 			<div class="card_content">
-				<h2 class="card_title">Game discription</h2>
-				<p class="card_description">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elitg. Rerum porro
-					dolores sapiente.
-				</p>
+				<h1>Minesweeper</h1>
+				<button onclick="playBtn()">PLAY</button>
+				<button onclick="descriptionBtn()">DESCRIPTION</button>
 			</div>
+
 			<img
-				src="https://www.islamicamentando.org/wp-content/uploads/2016/07/maxresdefault-1.jpg"
+				src="https://ocdn.eu/pulscms-transforms/1/vOnk9kpTURBXy82NmYwZTFkMDQ4NzVjYzBiYjNkYjE4ZmI3YTBmM2IxZS5qcGeRkwLNA5gA3gACoTABoTEB"
 				alt=""
 			/>
+		</div>
+
+		<div id="box" class="card">
+			<h2 class="card_title">Game description</h2>
+			<p class="card_description">
+				Minesweeper rules are very simple. The board is divided into cells, with
+				mines randomly distributed. To win, you need to open all the cells. The
+				number on a cell shows the number of mines adjacent to it. Using this
+				information, you can determine cells that are safe, and cells that
+				contain mines. Cells suspected of being mines can be marked with a flag
+				using the right mouse button.
+			</p>
+			<button id="closeBtn" onclick="closeDescriptionBtn()">close</button>
 		</div>
 
 		<script src="js/script.js"></script>

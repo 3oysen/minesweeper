@@ -1,3 +1,7 @@
+.box {
+    display: none;
+}
+
 .card {
     background-color: white;
     width: 35rem;
@@ -25,5 +29,4 @@
         margin: 0;
         color: $dark-grey;
     }
-
 }
