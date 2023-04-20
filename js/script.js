@@ -1,20 +1,20 @@
-function playBtn() {
+const menuPlayBtn = document.getElementById("menu-play-btn");
+const descriptionBtn = document.getElementById("description-btn");
+const description = document.getElementById("description-section");
+const img = document.getElementById("img");
+
+menuPlayBtn.addEventListener("click", () => {
 	console.log("click");
-}
+});
 
-const btn = document.getElementById("menuSection");
-function descriptionBtn() {
-	btn.style.display = "none";
-	box.style.display = "block";
-}
-
-const box = document.getElementById("box");
-box.style.display = "none";
-close.style.display = "block";
-
-let close = document.getElementById("closeBtn");
-function closeDescriptionBtn() {
-	btn.style.display = "block";
-	box.style.display = "none";
-	close.style.display = "none";
-}
+descriptionBtn.addEventListener("click", () => {
+	if (description.style.display === "block") {
+		descriptionBtn.innerHTML = "Description";
+		description.style.display = "none";
+		img.style.display = "block";
+	} else {
+		descriptionBtn.innerHTML = "Close description";
+		description.style.display = "block";
+		img.style.display = "none";
+	}
+});

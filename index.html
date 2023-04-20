@@ -8,31 +8,44 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<div id="menuSection" class="card">
-			<div class="card_content">
-				<h1>Minesweeper</h1>
-				<button onclick="playBtn()">PLAY</button>
-				<button onclick="descriptionBtn()">DESCRIPTION</button>
+		<div class="card">
+			<div id="menu-section">
+				<div class="card-content">
+					<h1>Minesweeper</h1>
+					<button id="menu-play-btn">Play</button>
+					<button id="description-btn">Description</button>
+				</div>
 			</div>
-
+			<div id="description-section">
+				<div class="card-content">
+					<h2 class="card-title">Game description</h2>
+					<p class="card-description">
+						Minesweeper rules are very simple. The board is divided into cells,
+						with mines randomly distributed. To win, you need to open all the
+						cells. The number on a cell shows the number of mines adjacent to
+						it. Using this information, you can determine cells that are safe,
+						and cells that contain mines. Cells suspected of being mines can be
+						marked with a flag using the right mouse button.
+					</p>
+				</div>
+			</div>
 			<img
+				id="img"
 				src="https://ocdn.eu/pulscms-transforms/1/vOnk9kpTURBXy82NmYwZTFkMDQ4NzVjYzBiYjNkYjE4ZmI3YTBmM2IxZS5qcGeRkwLNA5gA3gACoTABoTEB"
 				alt=""
 			/>
 		</div>
 
-		<div id="box" class="card">
-			<h2 class="card_title">Game description</h2>
-			<p class="card_description">
-				Minesweeper rules are very simple. The board is divided into cells, with
-				mines randomly distributed. To win, you need to open all the cells. The
-				number on a cell shows the number of mines adjacent to it. Using this
-				information, you can determine cells that are safe, and cells that
-				contain mines. Cells suspected of being mines can be marked with a flag
-				using the right mouse button.
-			</p>
-			<button id="closeBtn" onclick="closeDescriptionBtn()">close</button>
-		</div>
+		<!-- <div id="" class="">
+			<div class="card_content">
+				<h2 class="card_title">Select difficulty level</h2>
+				<button class="difficultyLevelBtn">easy</button>
+				<button class="difficultyLevelBtn">medium</button>
+				<button class="difficultyLevelBtn">hard</button>
+			</div>
+		</div> -->
+
+		<!-- <div class="grid"></div> -->
 
 		<script src="js/script.js"></script>
 	</body>

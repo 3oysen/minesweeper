@@ -8,6 +8,7 @@ body {
     font-family: $fonts; /* variable usage */
     background-color: $primary-color;
     padding: $spacing;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     @include flex-center(); /* using the mixins function */
 }

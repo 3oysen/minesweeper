@@ -1,14 +1,8 @@
-.box {
-    display: none;
-}
-
 .card {
     background-color: white;
     width: 35rem;
     overflow: hidden;
     margin: 2rem;
-    box-shadow: 5px 5px 5px 5px #000;
-    @include border-radius(0.5rem); /* using the mixins function */
     
     img {
         height: 25rem;
@@ -16,17 +10,33 @@
         background-position: center center;
     }
 
-    .card_content {
+    .card-content {
         padding: $spacing;
     }
 
-    .card_title {
+    .card-title {
         margin: 0;
         color: black;
     }
-
-    .card_description {
+    
+    .card-description {
         margin: 0;
         color: $dark-grey;
     }
+    
+    #descriptionSection {
+        display: none;
+    }
 }
+
+// .grid {
+//     height: 400px;
+//     width: 400px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     background-color: #dcd6bc;
+//     margin-left: 50px;
+//     margin-top: 20px;
+//     border: 10px solid #dcd6bc;
+//     margin-bottom: 10px;
+//   }
