@@ -1,0 +1,42 @@
+.card {
+    background-color: white;
+    width: 35rem;
+    overflow: hidden;
+    margin: 2rem;
+    
+    img {
+        height: 25rem;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .card-content {
+        padding: $spacing;
+    }
+
+    .card-title {
+        margin: 0;
+        color: black;
+    }
+    
+    .card-description {
+        margin: 0;
+        color: $dark-grey;
+    }
+    
+    #descriptionSection {
+        display: none;
+    }
+}
+
+// .grid {
+//     height: 400px;
+//     width: 400px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     background-color: #dcd6bc;
+//     margin-left: 50px;
+//     margin-top: 20px;
+//     border: 10px solid #dcd6bc;
+//     margin-bottom: 10px;
+//   }
