@@ -2,9 +2,10 @@
 /* $radius is the parameter of the function */
 .card {
   background-color: white;
+  height: 35rem;
   width: 35rem;
-  overflow: hidden;
   margin: 2rem;
+  overflow: hidden;
 }
 
 .card img {
@@ -27,8 +28,73 @@
   color: #999;
 }
 
-.card #descriptionSection {
+.card #description-section {
   display: none;
+}
+
+.btn {
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 20pt;
+  width: 200px;
+  height: 45px;
+  position: relative;
+  border: solid #119DA4 2px;
+  color: #119DA4;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #60C5CA;
+  border-radius: 23px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn:hover:before {
+  width: 120%;
+  left: -10%;
+}
+
+.btn:hover {
+  color: #f1f1f1;
+  border-color: #60C5CA;
+}
+
+.btn:active {
+  border-color: #AEECEF;
+  color: #333;
+  background-color: #AEECEF;
+}
+
+.btn:active:before {
+  background-color: #AEECEF;
+}
+
+.btn:active {
+  background-color: #AEECEF;
+  border-color: #AEECEF;
+  color: #333;
+}
+
+.btn:active:before {
+  background-color: #AEECEF;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 body {
