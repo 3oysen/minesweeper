@@ -7,6 +7,7 @@ const difficultySection = document.getElementById("difficulty-section");
 const btnEasy = document.getElementById("btn-easy");
 const btnMedium = document.getElementById("btn-medium");
 const btnHard = document.getElementById("btn-hard");
+const gameBoard = document.getElementById("game-board");
 
 menuPlayBtn.addEventListener("click", () => {
 	if (difficultySection.style.display === "block") {
@@ -41,8 +42,19 @@ btnEasy.addEventListener("click", () => {
 	menuSection.style.display = "none";
 	description.style.display = "none";
 	difficultySection.style.display = "none";
-	const gameBoard = document.createElement("div");
-	console.log(gameBoard);
+
+	for (let i = 0; i < 8; i++) {
+		for (let j = 0; j < 8; j++) {
+			let element = document.createElement("div");
+			gameBoard.appendChild(element);
+			element.className = "my-class";
+			element.setAttribute("data-row", i);
+			element.setAttribute("data-col", j);
+		}
+		let breaker = document.createElement("div");
+		gameBoard.appendChild(breaker);
+		breaker.className = "clear";
+	}
 });
 
 btnMedium.addEventListener("click", () => {
