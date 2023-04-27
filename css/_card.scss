@@ -1,8 +1,9 @@
 .card {
     background-color: white;
+    height: 35rem;
     width: 35rem;
-    overflow: hidden;
     margin: 2rem;
+    overflow: hidden;
     
     img {
         height: 25rem;
@@ -24,19 +25,34 @@
         color: $dark-grey;
     }
     
-    #descriptionSection {
+    #description-section {
         display: none;
+    }
+
+}
+
+.game-board-section {
+    width: 530px;
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    margin: auto;
+
+    .game-board {
+        // align-items: center;
+
+        .my-class {
+            float: left;
+            width: 45px;
+            height: 45px;
+            border: 5px solid $btn-color-border;
+            margin: 5px;
+            background-color: $btn-color-active;
+        }
+        
+        .clear {
+          clear: left;
+        }
     }
 }
 
-// .grid {
-//     height: 400px;
-//     width: 400px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     background-color: #dcd6bc;
-//     margin-left: 50px;
-//     margin-top: 20px;
-//     border: 10px solid #dcd6bc;
-//     margin-bottom: 10px;
-//   }

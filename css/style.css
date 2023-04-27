@@ -2,51 +2,102 @@
 /* $radius is the parameter of the function */
 .card {
   background-color: white;
+  height: 35rem;
   width: 35rem;
-  overflow: hidden;
   margin: 2rem;
+  overflow: hidden;
 }
-
 .card img {
   height: 25rem;
   background-size: cover;
   background-position: center center;
 }
-
 .card .card-content {
   padding: 2rem;
 }
-
 .card .card-title {
   margin: 0;
   color: black;
 }
-
 .card .card-description {
   margin: 0;
   color: #999;
 }
-
-.card #descriptionSection {
+.card #description-section {
   display: none;
 }
 
+.game-board-section {
+  width: 530px;
+  margin: auto;
+}
+.game-board-section .game-board .my-class {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border: 5px solid #119DA4;
+  margin: 5px;
+  background-color: #AEECEF;
+}
+.game-board-section .game-board .clear {
+  clear: left;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 45px;
+  margin: 5px;
+  border: solid #119DA4 2px;
+  background-color: transparent;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #119DA4;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 3px;
+  background: #60C5CA;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  border-color: #60C5CA;
+  color: #f1f1f1;
+}
+.btn:hover:before {
+  width: 120%;
+  left: -10%;
+}
+.btn:active {
+  background-color: #AEECEF;
+  border-color: #AEECEF;
+  color: #333;
+}
+.btn:active:before {
+  background-color: #AEECEF;
+}
+.btn:focus {
+  outline: none;
+}
+
 body {
-  font-family: "Poppins", Helvertica, sans-serif;
-  /* variable usage */
+  font-family: "Poppins", Helvertica, sans-serif; /* variable usage */
   background-color: #6D9DC5;
   padding: 2rem;
   height: 100vh;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   /* using the mixins function */
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
